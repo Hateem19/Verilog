@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dcm_25MHz_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1704041848">
+  <File Type="PA-TCL" Name="dcm_25MHz.tcl"/>
+  <File Type="REPORTS-TCL" Name="dcm_25MHz_reports.tcl"/>
+  <File Type="RDS-RDS" Name="dcm_25MHz.vds"/>
+  <File Type="RDS-UTIL" Name="dcm_25MHz_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dcm_25MHz_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dcm_25MHz.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dcm_25MHz">
+    <File Path="$PSRCDIR/sources_1/ip/dcm_25MHz/dcm_25MHz.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../again/project_7/project_7.srcs/sources_1/ip/dcm_25MHz/dcm_25MHz.xci"/>
+        <Attr Name="ImportTime" Val="1704041843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dcm_25MHz"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dcm_25MHz">
+    <File Path="$PSRCDIR/sources_1/ip/dcm_25MHz/dcm_25MHz.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../again/project_7/project_7.srcs/sources_1/ip/dcm_25MHz/dcm_25MHz.xci"/>
+        <Attr Name="ImportTime" Val="1704041843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dcm_25MHz"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
